@@ -1,0 +1,1403 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Yoga Layout Playground'
+  ClientHeight = 768
+  ClientWidth = 1024
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object LayoutProperties: TLayout
+    Align = Left
+    Size.Width = 256.000000000000000000
+    Size.Height = 768.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object TabControl: TTabControl
+      Align = Client
+      Size.Width = 256.000000000000000000
+      Size.Height = 729.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 2
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      Sizes = (
+        256s
+        703s
+        256s
+        703s
+        256s
+        703s)
+      object TabItemFlex: TTabItem
+        CustomIcon = <
+          item
+          end>
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        StyledSettings = [Family, Size, FontColor]
+        IsSelected = False
+        Size.Width = 43.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Flex'
+        ExplicitSize.cx = 41.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object VertScrollBoxFlex: TVertScrollBox
+          Align = Client
+          Size.Width = 256.000000000000000000
+          Size.Height = 703.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 256.000000000000000000
+          Viewport.Height = 703.000000000000000000
+          object GridPanelLayoutFlex: TGridPanelLayout
+            Align = Top
+            Margins.Left = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Position.X = 4.000000000000000000
+            Size.Width = 248.000000000000000000
+            Size.Height = 264.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            ColumnCollection = <
+              item
+                Value = 33.333333333333350000
+              end
+              item
+                Value = 33.333333333333330000
+              end
+              item
+                Value = 33.333333333333320000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                ColumnSpan = 3
+                Control = LabelDirection
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = SpeedButtonInherit
+                Row = 1
+              end
+              item
+                Column = 1
+                Control = SpeedButtonLtr
+                Row = 1
+              end
+              item
+                Column = 2
+                Control = SpeedButtonRtl
+                Row = 1
+              end
+              item
+                Column = 0
+                ColumnSpan = 3
+                Control = LabelFlexDirection
+                Row = 2
+              end
+              item
+                Column = 0
+                ColumnSpan = 3
+                Control = ComboBoxFlexDirection
+                Row = 3
+              end
+              item
+                Column = 0
+                Control = LabelBasis
+                Row = 4
+              end
+              item
+                Column = 1
+                Control = LabelGrow
+                Row = 4
+              end
+              item
+                Column = 2
+                Control = LabelShrink
+                Row = 4
+              end
+              item
+                Column = 0
+                Control = EditBasis
+                Row = 5
+              end
+              item
+                Column = 1
+                Control = EditGrow
+                Row = 5
+              end
+              item
+                Column = 2
+                Control = EditShrink
+                Row = 5
+              end
+              item
+                Column = 0
+                ColumnSpan = 3
+                Control = LabelFlexWrap
+                Row = 6
+              end
+              item
+                Column = 0
+                Control = SpeedButtonNoWrap
+                Row = 7
+              end
+              item
+                Column = 1
+                Control = SpeedButtonWrap
+                Row = 7
+              end
+              item
+                Column = 2
+                Control = SpeedButtonWrapReverse
+                Row = 7
+              end>
+            RowCollection = <
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                SizeStyle = Auto
+              end>
+            object LabelDirection: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 248.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'DIRECTION'
+              TabOrder = 0
+            end
+            object SpeedButtonInherit: TSpeedButton
+              StyleName = 'Direction'
+              StaysPressed = True
+              Align = Client
+              GroupName = 'Direction'
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 82.666664123535160000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'segmentedbuttonleft'
+              Text = 'Inherit'
+              OnClick = ControlChange
+            end
+            object SpeedButtonLtr: TSpeedButton
+              Tag = 1
+              StyleName = 'Direction'
+              StaysPressed = True
+              Align = Client
+              GroupName = 'Direction'
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 82.666664123535160000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'segmentedbuttonmiddle'
+              Text = 'LTR'
+              OnClick = ControlChange
+            end
+            object SpeedButtonRtl: TSpeedButton
+              Tag = 2
+              StyleName = 'Direction'
+              StaysPressed = True
+              Align = Client
+              GroupName = 'Direction'
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 82.666671752929690000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'segmentedbuttonright'
+              Text = 'RTL'
+              OnClick = ControlChange
+            end
+            object LabelFlexDirection: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 248.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'FLEX DIRECTION'
+              TabOrder = 1
+            end
+            object ComboBoxFlexDirection: TComboBox
+              StyleName = 'FlexDirection'
+              Align = Client
+              Items.Strings = (
+                'Column'
+                'ColumnReverse'
+                'Row'
+                'RowReverse')
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 248.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              OnChange = ControlChange
+            end
+            object LabelBasis: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 82.666664123535160000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'BASIS'
+              TabOrder = 3
+            end
+            object LabelGrow: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 82.666664123535160000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'GROW'
+              TabOrder = 4
+            end
+            object LabelShrink: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 82.666671752929690000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'SHRINK'
+              TabOrder = 5
+            end
+            object EditBasis: TEdit
+              StyleName = 'FlexBasis'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 6
+              FilterChar = '0123456789.%'
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 2.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 80.666664123535160000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'auto'
+              OnChangeTracking = ControlChange
+            end
+            object EditGrow: TEdit
+              StyleName = 'FlexGrow'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 7
+              FilterChar = '0123456789.%'
+              Margins.Left = 2.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 2.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 78.666664123535160000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = '0'
+              OnChangeTracking = ControlChange
+            end
+            object EditShrink: TEdit
+              StyleName = 'FlexShrink'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 8
+              FilterChar = '0123456789.%'
+              Margins.Left = 2.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 80.666671752929690000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = '1'
+              OnChangeTracking = ControlChange
+            end
+            object LabelFlexWrap: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 248.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'FLEX WRAP'
+              TabOrder = 9
+            end
+            object SpeedButtonNoWrap: TSpeedButton
+              StyleName = 'FlexWrap'
+              StaysPressed = True
+              Align = Client
+              GroupName = 'FlexWrap'
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 82.666664123535160000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'segmentedbuttonleft'
+              Text = 'No'
+              OnClick = ControlChange
+            end
+            object SpeedButtonWrap: TSpeedButton
+              Tag = 1
+              StyleName = 'FlexWrap'
+              StaysPressed = True
+              Align = Client
+              GroupName = 'FlexWrap'
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 82.666664123535160000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'segmentedbuttonmiddle'
+              Text = 'Wrap'
+              OnClick = ControlChange
+            end
+            object SpeedButtonWrapReverse: TSpeedButton
+              Tag = 2
+              StyleName = 'FlexWrap'
+              StaysPressed = True
+              Align = Client
+              GroupName = 'FlexWrap'
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 82.666671752929690000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'segmentedbuttonright'
+              Text = 'WrapReverse'
+              OnClick = ControlChange
+            end
+          end
+        end
+      end
+      object TabItemAlignment: TTabItem
+        CustomIcon = <
+          item
+          end>
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        StyledSettings = [Family, Size, FontColor]
+        IsSelected = False
+        Size.Width = 80.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Alignment'
+        ExplicitSize.cx = 75.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object VertScrollBoxAlignment: TVertScrollBox
+          Align = Client
+          Size.Width = 256.000000000000000000
+          Size.Height = 703.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 256.000000000000000000
+          Viewport.Height = 703.000000000000000000
+          object GridPanelLayoutAlignment: TGridPanelLayout
+            Align = Top
+            Margins.Left = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Position.X = 4.000000000000000000
+            Size.Width = 248.000000000000000000
+            Size.Height = 264.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            ColumnCollection = <
+              item
+                Value = 100.000000000000000000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = LabelJustifyContent
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = LabelAlignItems
+                Row = 2
+              end
+              item
+                Column = 0
+                Control = ComboBoxAlignItems
+                Row = 3
+              end
+              item
+                Column = 0
+                Control = LabelAlignSelf
+                Row = 4
+              end
+              item
+                Column = 0
+                Control = LabelAlignContent
+                Row = 6
+              end
+              item
+                Column = 0
+                Control = ComboBoxJustifyContent
+                Row = 1
+              end
+              item
+                Column = 0
+                Control = ComboBoxAlignSelf
+                Row = 5
+              end
+              item
+                Column = 0
+                Control = ComboBoxAlignContent
+                Row = 7
+              end>
+            RowCollection = <
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                SizeStyle = Auto
+              end>
+            object LabelJustifyContent: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 248.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'JUSTIFY CONTENT'
+              TabOrder = 0
+            end
+            object LabelAlignItems: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 248.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'ALIGN ITEMS'
+              TabOrder = 2
+            end
+            object ComboBoxAlignItems: TComboBox
+              StyleName = 'AlignItems'
+              Align = Client
+              Items.Strings = (
+                'Auto'
+                'FlexStart'
+                'Center'
+                'FlexEnd'
+                'Stretch'
+                'Baseline'
+                'SpaceBetween'
+                'SpaceAround')
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 248.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              OnChange = ControlChange
+            end
+            object LabelAlignSelf: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 248.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'ALIGN SELF'
+              TabOrder = 4
+            end
+            object LabelAlignContent: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 248.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'ALIGN CONTENT'
+              TabOrder = 6
+            end
+            object ComboBoxJustifyContent: TComboBox
+              StyleName = 'JustifyContent'
+              Align = Client
+              Items.Strings = (
+                'FlexStart'
+                'Center'
+                'FlexEnd'
+                'SpaceBetween'
+                'SpaceAround'
+                'SpaceEvenly')
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 248.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              OnChange = ControlChange
+            end
+            object ComboBoxAlignSelf: TComboBox
+              StyleName = 'AlignSelf'
+              Align = Client
+              Items.Strings = (
+                'Auto'
+                'FlexStart'
+                'Center'
+                'FlexEnd'
+                'Stretch'
+                'Baseline'
+                'SpaceBetween'
+                'SpaceAround')
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 248.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              OnChange = ControlChange
+            end
+            object ComboBoxAlignContent: TComboBox
+              StyleName = 'AlignContent'
+              Align = Client
+              Items.Strings = (
+                'Auto'
+                'FlexStart'
+                'Center'
+                'FlexEnd'
+                'Stretch'
+                'Baseline'
+                'SpaceBetween'
+                'SpaceAround')
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 248.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 7
+              OnChange = ControlChange
+            end
+          end
+        end
+      end
+      object TabItemLayout: TTabItem
+        CustomIcon = <
+          item
+          end>
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        StyledSettings = [Family, Size, FontColor]
+        IsSelected = True
+        Size.Width = 59.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Layout'
+        ExplicitSize.cx = 59.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object VertScrollBoxLayout: TVertScrollBox
+          Align = Client
+          Size.Width = 256.000000000000000000
+          Size.Height = 703.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 256.000000000000000000
+          Viewport.Height = 703.000000000000000000
+          object GridPanelLayoutLayout: TGridPanelLayout
+            Align = Top
+            Margins.Left = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Position.X = 4.000000000000000000
+            Size.Width = 248.000000000000000000
+            Size.Height = 264.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            ColumnCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                ColumnSpan = 2
+                Control = LabelWidthHeight
+                Row = 0
+              end
+              item
+                Column = 0
+                ColumnSpan = 2
+                Control = LabelMaxWidthHeight
+                Row = 2
+              end
+              item
+                Column = 0
+                ColumnSpan = 2
+                Control = LabelMinWidthHeight
+                Row = 4
+              end
+              item
+                Column = 0
+                ColumnSpan = 2
+                Control = LabelAspectRatio
+                Row = 6
+              end
+              item
+                Column = 0
+                Control = EditWidth
+                Row = 1
+              end
+              item
+                Column = 1
+                Control = EditHeight
+                Row = 1
+              end
+              item
+                Column = 0
+                Control = EditMaxWidth
+                Row = 3
+              end
+              item
+                Column = 1
+                Control = EditMaxHeight
+                Row = 3
+              end
+              item
+                Column = 0
+                Control = EditMinWidth
+                Row = 5
+              end
+              item
+                Column = 1
+                Control = EditMinHeight
+                Row = 5
+              end
+              item
+                Column = 0
+                ColumnSpan = 2
+                Control = EditAspectRatio
+                Row = 7
+              end>
+            RowCollection = <
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                Value = 12.500000000000000000
+              end
+              item
+                SizeStyle = Auto
+              end>
+            object LabelWidthHeight: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 248.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'WIDTH '#215' HEIGHT'
+              TabOrder = 0
+            end
+            object LabelMaxWidthHeight: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 248.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'MAX-WIDTH '#215' MAX-HEIGHT'
+              TabOrder = 3
+            end
+            object LabelMinWidthHeight: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 248.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'MIN-WIDTH '#215' MIN-HEIGHT'
+              TabOrder = 6
+            end
+            object LabelAspectRatio: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 248.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'ASPECT RATIO'
+              TabOrder = 9
+            end
+            object EditWidth: TEdit
+              StyleName = 'Width'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 1
+              FilterChar = '0123456789.%'
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 2.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 122.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'auto'
+              OnChangeTracking = ControlChange
+            end
+            object EditHeight: TEdit
+              StyleName = 'Height'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 2
+              FilterChar = '0123456789.%'
+              Margins.Left = 2.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 122.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'auto'
+              OnChangeTracking = ControlChange
+            end
+            object EditMaxWidth: TEdit
+              StyleName = 'MaxWidth'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 4
+              FilterChar = '0123456789.%'
+              Margins.Left = 2.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 122.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'none'
+              OnChangeTracking = ControlChange
+            end
+            object EditMaxHeight: TEdit
+              StyleName = 'MaxHeight'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 5
+              FilterChar = '0123456789.%'
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 2.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 122.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'none'
+              OnChangeTracking = ControlChange
+            end
+            object EditMinWidth: TEdit
+              StyleName = 'MinWidth'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 7
+              FilterChar = '0123456789.%'
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 2.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 122.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = '0'
+              OnChangeTracking = ControlChange
+            end
+            object EditMinHeight: TEdit
+              StyleName = 'MinHeight'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 8
+              FilterChar = '0123456789.%'
+              Margins.Left = 2.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 122.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = '0'
+              OnChangeTracking = ControlChange
+            end
+            object EditAspectRatio: TEdit
+              StyleName = 'AspectRatio'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 10
+              FilterChar = '0123456789.%'
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 248.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'auto'
+              OnChangeTracking = ControlChange
+            end
+          end
+          object GridPanelLayoutPadding: TGridPanelLayout
+            Align = Top
+            Margins.Left = 30.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 30.000000000000000000
+            Position.X = 30.000000000000000000
+            Position.Y = 272.000000000000000000
+            Size.Width = 196.000000000000000000
+            Size.Height = 75.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            ColumnCollection = <
+              item
+                Value = 33.333333333333350000
+              end
+              item
+                Value = 33.333333333333330000
+              end
+              item
+                Value = 33.333333333333320000
+              end>
+            ControlCollection = <
+              item
+                Column = 1
+                Control = EditPaddingTop
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = LabelPadding
+                Row = 1
+              end
+              item
+                Column = 2
+                Control = EditPaddingRight
+                Row = 1
+              end
+              item
+                Column = 1
+                Control = EditPaddingBottom
+                Row = 2
+              end
+              item
+                Column = 0
+                Control = EditPaddingLeft
+                Row = 1
+              end>
+            RowCollection = <
+              item
+                Value = 33.333333333333340000
+              end
+              item
+                Value = 33.333333333333340000
+              end
+              item
+                Value = 33.333333333333320000
+              end>
+            object EditPaddingTop: TEdit
+              StyleName = 'PaddingTop'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              FilterChar = '0123456789.%'
+              Size.Width = 65.333335876464840000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = '0'
+              OnChangeTracking = ControlChange
+            end
+            object LabelPadding: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 65.333335876464840000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'PADDING'
+              TabOrder = 2
+            end
+            object EditPaddingRight: TEdit
+              StyleName = 'PaddingRight'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 3
+              FilterChar = '0123456789.%'
+              Size.Width = 65.333328247070310000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = '0'
+              OnChangeTracking = ControlChange
+            end
+            object EditPaddingBottom: TEdit
+              StyleName = 'PaddingBottom'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 4
+              FilterChar = '0123456789.%'
+              Size.Width = 65.333335876464840000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = '0'
+              OnChangeTracking = ControlChange
+            end
+            object EditPaddingLeft: TEdit
+              StyleName = 'PaddingLeft'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 1
+              FilterChar = '0123456789.%'
+              Size.Width = 65.333335876464840000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = '0'
+              OnChangeTracking = ControlChange
+            end
+          end
+          object GridPanelLayoutMargin: TGridPanelLayout
+            Align = Top
+            Margins.Left = 30.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 30.000000000000000000
+            Position.X = 30.000000000000000000
+            Position.Y = 355.000000000000000000
+            Size.Width = 196.000000000000000000
+            Size.Height = 75.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            ColumnCollection = <
+              item
+                Value = 33.333333333333350000
+              end
+              item
+                Value = 33.333333333333330000
+              end
+              item
+                Value = 33.333333333333320000
+              end>
+            ControlCollection = <
+              item
+                Column = 1
+                Control = EditMarginTop
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = LabelMargin
+                Row = 1
+              end
+              item
+                Column = 2
+                Control = EditMarginRight
+                Row = 1
+              end
+              item
+                Column = 1
+                Control = EditMarginBottom
+                Row = 2
+              end
+              item
+                Column = 0
+                Control = EditMarginLeft
+                Row = 1
+              end>
+            RowCollection = <
+              item
+                Value = 33.333333333333340000
+              end
+              item
+                Value = 33.333333333333340000
+              end
+              item
+                Value = 33.333333333333320000
+              end>
+            object EditMarginTop: TEdit
+              StyleName = 'MarginTop'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              FilterChar = '0123456789.%'
+              Size.Width = 65.333335876464840000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = '0'
+              OnChangeTracking = ControlChange
+            end
+            object LabelMargin: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 65.333335876464840000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'MARGIN'
+              TabOrder = 2
+            end
+            object EditMarginRight: TEdit
+              StyleName = 'MarginRight'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 3
+              FilterChar = '0123456789.%'
+              Size.Width = 65.333328247070310000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = '0'
+              OnChangeTracking = ControlChange
+            end
+            object EditMarginBottom: TEdit
+              StyleName = 'MarginBottom'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 4
+              FilterChar = '0123456789.%'
+              Size.Width = 65.333335876464840000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = '0'
+              OnChangeTracking = ControlChange
+            end
+            object EditMarginLeft: TEdit
+              StyleName = 'MarginLeft'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 1
+              FilterChar = '0123456789.%'
+              Size.Width = 65.333335876464840000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = '0'
+              OnChangeTracking = ControlChange
+            end
+          end
+          object GridPanelLayoutPositionType: TGridPanelLayout
+            Align = Top
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Position.X = 4.000000000000000000
+            Position.Y = 438.000000000000000000
+            Size.Width = 248.000000000000000000
+            Size.Height = 66.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            ColumnCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                ColumnSpan = 2
+                Control = LabelPositionType
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = SpeedButtonRelative
+                Row = 1
+              end
+              item
+                Column = 1
+                Control = SpeedButtonAbsoute
+                Row = 1
+              end>
+            RowCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                SizeStyle = Auto
+              end>
+            object LabelPositionType: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 248.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'POSITION TYPE'
+              TabOrder = 0
+            end
+            object SpeedButtonRelative: TSpeedButton
+              StyleName = 'PositionType'
+              StaysPressed = True
+              Align = Client
+              GroupName = 'PositionType'
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 124.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'segmentedbuttonleft'
+              Text = 'Relative'
+              OnClick = ControlChange
+            end
+            object SpeedButtonAbsoute: TSpeedButton
+              Tag = 1
+              StyleName = 'PositionType'
+              StaysPressed = True
+              Align = Client
+              GroupName = 'PositionType'
+              Margins.Top = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 124.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'segmentedbuttonright'
+              Text = 'Absolute'
+              OnClick = ControlChange
+            end
+          end
+          object GridPanelLayoutPosition: TGridPanelLayout
+            Align = Top
+            Margins.Left = 30.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 30.000000000000000000
+            Position.X = 30.000000000000000000
+            Position.Y = 512.000000000000000000
+            Size.Width = 196.000000000000000000
+            Size.Height = 75.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            ColumnCollection = <
+              item
+                Value = 33.333333333333350000
+              end
+              item
+                Value = 33.333333333333330000
+              end
+              item
+                Value = 33.333333333333320000
+              end>
+            ControlCollection = <
+              item
+                Column = 1
+                Control = EditPositionTop
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = LabelPosition
+                Row = 1
+              end
+              item
+                Column = 2
+                Control = EditPositionRight
+                Row = 1
+              end
+              item
+                Column = 1
+                Control = EditPositionBottom
+                Row = 2
+              end
+              item
+                Column = 0
+                Control = EditPositionLeft
+                Row = 1
+              end>
+            RowCollection = <
+              item
+                Value = 33.333333333333340000
+              end
+              item
+                Value = 33.333333333333340000
+              end
+              item
+                Value = 33.333333333333320000
+              end>
+            object EditPositionTop: TEdit
+              StyleName = 'Top'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              FilterChar = '0123456789.%'
+              Size.Width = 65.333335876464840000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              OnChangeTracking = ControlChange
+            end
+            object LabelPosition: TLabel
+              Align = Client
+              StyledSettings = [Family, Size, FontColor]
+              Size.Width = 65.333335876464840000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = 'POSITION'
+              TabOrder = 2
+            end
+            object EditPositionRight: TEdit
+              StyleName = 'Right'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 3
+              FilterChar = '0123456789.%'
+              Size.Width = 65.333328247070310000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              OnChangeTracking = ControlChange
+            end
+            object EditPositionBottom: TEdit
+              StyleName = 'Bottom'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 4
+              FilterChar = '0123456789.%'
+              Size.Width = 65.333335876464840000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              OnChangeTracking = ControlChange
+            end
+            object EditPositionLeft: TEdit
+              StyleName = 'Left'
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 1
+              FilterChar = '0123456789.%'
+              Size.Width = 65.333335876464840000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              OnChangeTracking = ControlChange
+            end
+          end
+        end
+      end
+    end
+    object GridPanelLayoutCommands: TGridPanelLayout
+      Align = Bottom
+      Margins.Left = 4.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 4.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Position.X = 4.000000000000000000
+      Position.Y = 733.000000000000000000
+      Size.Width = 248.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      ColumnCollection = <
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          Value = 50.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = ButtonAddChildNode
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = ButtonRemoveNode
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 100.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+        end>
+      object ButtonAddChildNode: TButton
+        Align = Client
+        Margins.Right = 2.000000000000000000
+        Size.Width = 122.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'add child node'
+        OnClick = ButtonAddChildNodeClick
+      end
+      object ButtonRemoveNode: TButton
+        Align = Client
+        Margins.Left = 2.000000000000000000
+        Size.Width = 122.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'remove node'
+        OnClick = ButtonRemoveNodeClick
+      end
+    end
+  end
+  object LayoutContainer: TLayout
+    Align = Client
+    Size.Width = 768.000000000000000000
+    Size.Height = 768.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+end
