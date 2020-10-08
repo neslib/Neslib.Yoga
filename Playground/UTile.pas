@@ -125,6 +125,10 @@ end;
 
 procedure TTile.Remove;
 begin
+  { Fix for issue #1 }
+  if (FNode.Parent <> nil) then
+    FNode.Parent.Remove(FNode);
+
   if (Parent <> nil) then
     Parent.RemoveObject(Self);
   Free;
