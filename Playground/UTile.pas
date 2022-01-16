@@ -106,7 +106,7 @@ begin
 
   FNode := TYogaNode.Create;
   FNode.Width := AWidth;
-  FNode.Height := AWidth;
+  FNode.Height := AHeight;
   FNode.Direction := TYogaDirection.LTR;
 
   if (AParent <> nil) then
